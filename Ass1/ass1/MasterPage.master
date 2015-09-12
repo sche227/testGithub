@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+        labelDate.Text = DateTime.Now.ToLongDateString();
+    }
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    
+    <div class="body1">
+
+        <table class="table1">
+       
+            <tr>
+                <td class="bordertxt" colspan="3"></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="3">
+                    <asp:Image ID="image1" runat="server" ImageUrl="~/ass1/1.png" />
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="bordertxt" colspan="3"></td>
+            </tr>
+
+
+            <tr>
+
+                <td class="table2" colspan="1">
+
+                    <div class="menutxt" >                
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1"  runat="server" />      
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticDisplayLevels="2">
+                        </asp:Menu>
+                    </div>  
+                
+                    <br /><br /><br />
+                
+                    <div class="lantern">
+                        <asp:Image runat="server" ImageUrl="~/ass1/3.png" />
+                    </div>   
+                
+                    <br /><br /><br />
+
+                    <div class="Calendar">
+                        <asp:Calendar ID="calender1" runat="server">              
+                        </asp:Calendar>
+                    </div>
+
+                </td>       
+
+
+                <td class="table3" colspan="2"> 
+                
+                    <div class="SiteMapPath">
+                        <asp:SiteMapPath ID="sitemap1" runat="server">                    
+                            <PathSeparatorTemplate> 
+                                --> 
+                            </PathSeparatorTemplate>
+                        </asp:SiteMapPath>
+                    </div>  
+                         
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">     
+                    </asp:ContentPlaceHolder>
+
+                 </td>
+
+            </tr>
+
+
+            <tr>
+        
+                <td class="footertxt"></td>
+       
+                <td class="footertxt">Copyright: BIN LEI&nbsp;&nbsp;<asp:label ID="labelDate" runat="server" /></td>
+       
+                <td class="footertxt"></td>
+
+             </tr>
+
+     
+        </table>
+    
+    </div>
+
+    </form>
+</body>
+</html>

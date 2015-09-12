@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>AdBanner/1.gif</ImageUrl>
+    <Impressions>50</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>AdBanner/2.gif</ImageUrl>
+    <Impressions>50</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>AdBanner/3.gif</ImageUrl>
+    <Impressions>50</Impressions>
+  </Ad>
+</Advertisements>

@@ -1,0 +1,79 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:TextBox  runat="server" Columns="15" Width="120" Height="30" />
+
+
+<asp:RadioButtonList runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow" />
+
+
+<asp:DropDownList runat="server" Width="120px" Height="30px" Font-Size="Large" Font-Names="AR CENA"/>
+
+
+<asp:ListBox  Font-Size="27px" Font-Names="AR CENA" rows="2" runat="server" Width="120px" Height="30px"/>
+
+
+<asp:CheckBox  runat="server" Width="120px" Height="30px" />
+
+
+<asp:Panel runat="server" CssClass="panel" HorizontalAlign="Center"  />
+
+
+<asp:RequiredFieldValidator Display="Dynamic"  ForeColor="#FF0000" runat="server" />
+
+
+<asp:CompareValidator ForeColor="#FF0000" Display="Dynamic" runat="server"/>
+
+
+<asp:RegularExpressionValidator   Display="Dynamic"  ErrorMessage="Please Enter a Valid Email Address" ForeColor="#FF0000" runat="server"/>
+
+
+<asp:RangeValidator    Display="Dynamic" ErrorMessage="Please enter correct phone number" ForeColor="Red" runat="server" />
+
+
+<asp:CustomValidator runat="server" ErrorMessage="You must check the box." ForeColor="Red" />
+
+
+<asp:Menu  runat="server" forecolor="red" DynamicHorizontalOffset="2" StaticDisplayLevels="2">
+    
+    <DynamicHoverStyle BackColor="red" ForeColor="yellow" />
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <DynamicMenuStyle BackColor="yellow" />
+
+    <StaticHoverStyle BackColor="red" ForeColor="yellow" />
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+
+</asp:Menu>
+
+
+<asp:Calendar runat="server" BorderColor="red" BorderWidth="1px" TitleStyle-BackColor="White" BackColor="#FFFFCC" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="black" Height="200px" ShowGridLines="True" Width="220px">
+                <DayHeaderStyle BackColor="red" Font-Bold="True" Height="1px" />
+                <NextPrevStyle Font-Size="9pt" ForeColor="black" />
+                <OtherMonthDayStyle ForeColor="#CC9966" />
+                <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
+                <SelectorStyle BackColor="#FFCC66" />
+                <TitleStyle BackColor="black" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC"></TitleStyle>
+                <TodayDayStyle BackColor="black" ForeColor="White" />
+                <WeekendDayStyle BackColor="red" ForeColor="black"/>
+</asp:Calendar>
+
+
+ <asp:TreeView  runat="server"  ImageSet="BulletedList3" ShowExpandCollapse="False">
+        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+        <NodeStyle Font-Names="Arial" Font-Size="20pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+        <ParentNodeStyle Font-Bold="False" />
+        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+    </asp:TreeView>
